@@ -31,6 +31,7 @@
             <section>
                 <header id="Built_in_Data_Types">Built-in Data Types</header>
                 <article>
+                    <p>Python provides a rich set of built-in data types that are essential for performing various operations. Here are a few important ones:</p>
                     <ul>
                         <li>
                             <b>Integer:</b> The <b>'int'</b> data type represents whole numbers without fractional parts. It supports arithmetic operations such as addition, subtraction, multiplication, and division.
@@ -120,6 +121,45 @@
             </section>
             <section>
                 <header id="File_Handling">File Handling</header>
+                <article>
+                    <p>Python provides various functions and methods to handle files. Here are a few file handling operations you should be familiar with:</p>
+                    <ul>
+                        <li>
+                            <b>Opening a File:</b> The <b>'open()'</b> function is used to open a file in Python. It takes two arguments: the file name and the mode in which the file should be opened (e.g., read mode, write mode, append mode).
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    file = open('data.txt', 'r')
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>Reading from a File:</b> The <b>'read()'</b> method is used to read the contents of a file. It reads the entire file as a single string or can read a specific number of characters at a time using the <b>'read(n)'</b> method.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    file = open('data.txt', 'r')
+                                    content = file.read()
+                                    print(content)
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>Writing to a File:</b> The <b>'write()'</b> method is used to write data to a file. It takes a string as an argument and writes it to the file. If the file does not exist, it will be created.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    file = open('data.txt', 'w')
+                                    file.write('Hello, world!')
+                                    file.close()
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </article>
             </section>
             <section>
                 <header id="Regular_Expressions">Regular Expressions</header>

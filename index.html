@@ -163,6 +163,58 @@
             </section>
             <section>
                 <header id="Regular_Expressions">Regular Expressions</header>
+                <article>
+                    <p>Regular Expressions</p>
+                    <ul>
+                        <li>
+                            <b>Pattern Matching:</b> A regular expression, also known as a pattern is a sequence of characters that defines a search pattern. Python's <b>'re'</b> module provides functions such as <b>'search()'</b>, <b>'match()'</b>, and <b>'findall()'</b> for pattern matching.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    import re
+
+                                    text = "Hellow, world!"
+                                    pattern = r"Hello"
+                                    match = re.search(pattern, text)
+                                    if match:
+                                        print("Pattern found.")
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>Metacharacters:</b> Metacharacters are characters with special meanings in regular expressions. Some commonly used metacharacters include <b>'.'</b> (matches any character), <b>'*'</b> (matches zero or more occurrences), and <b>'+'</b> (matches one or more occurences).
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    import re
+
+                                    text = "The quick brown fox jumps over the lazy dog."
+                                    pattern = r".o."
+                                    matches = re.findall(pattern, text)
+                                    print(matches) # Output: ['fox', 'dog']
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>Character Classes:</b> Character classes allow you to match a specific set of characters. For example, <b>'[0-9]'</b> matches any digit, <b>'[a-zA-Z]'</b> matches any alphabetic character, and <b>'[^0-9]'</b> matches any character except a digit.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    import re
+
+                                    text = "The password must contain at least one uppercase letter."
+                                    pattern = r"[A-Z]"
+                                    match = re.search(pattern, text)
+                                    if match:
+                                        print("Uppercase letter found.")
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </article>
             </section>
             <section>
                 <header id="Database_Connectivity">Database Connectivity</header>

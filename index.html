@@ -406,6 +406,58 @@
             </section>
             <section>
                 <header id="Web_Scraping">Web Scraping</header>
+                <article>
+                    <p>Web scraping is the process of extracting data from websites. Python provides powerful libraries and tools for web scraping, making it easier to retrieve and manipulate data from web pages. Here are a few important concepts related to web scraping:</p>
+                    <ul>
+                        <li>
+                            <b>Requests:</b> The <b>'requests'</b> library allows you to send HTTP requests and retrieve the content of web pages. It provides functions such as <b>'get()'</b> and <b>'post()'</b> for making HTTP requests.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    import requests
+
+                                    response = requests.get("https://www.example.com")
+                                    print(response.status_code)  # Output: 200
+                                    print(response.text)  # Output: HTML content of the page
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>Beautiful Soup:</b> The <b>'BeautifulSoup'</b> library is used for parsing HTML and XML documents. It provides a simple interface to navigate and search the parsed data, making it easy to extract specific elements or data from web pages.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    from bs4 import BeautifulSoup
+
+                                    html = "&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello, world!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;"
+                                    soup = BeautifulSoup(html, "html.parser")
+                                    heading = soup.find("h1")
+                                    print(heading.text)  # Output: Hello, world!
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>XPath and CSS Selectors:</b> XPath and CSS selectors are used to locate specific elements within an HTML document. They provide a concise and powerful way to navigate and extract data from the document.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    from lxml import etree
+                                    from cssselect import CSSSelector
+
+                                    html = "&lt;html&gt;&lt;body&gt;&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html>"
+                                    tree = etree.fromstring(html)
+                                    selector = CSSSelector("li")
+                                    items = selector(tree)
+                                    for item in items:
+                                        print(item.text)  # Output: Item 1, Item 2
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </article>
             </section>
             <section>
                 <header id="Reference">Reference</header>

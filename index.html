@@ -218,6 +218,63 @@
             </section>
             <section>
                 <header id="Database_Connectivity">Database Connectivity</header>
+                <article>
+                    <p>Python offers various libraries and modules to connect and interact with databases. Here are a few commonly used modules for database connectivity:</p>
+                    <ul>
+                        <li>
+                            <b>SQLite3:</b> Then <b>'sqlite3'</b> module procides a simple and lightweight way to interact with SQLite databases. It allows you to create, modify, and query databases using SQL statements.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    import sqlite3
+
+                                    conn = sqlite3.connect('example.db')
+                                    cursor = conn.cursor()
+                                    cursor.execute('''CREATE TABLE users (id INT PRIMARY KEY, name TEXT)''')
+                                    conn.commit()
+                                    conn.close()
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>MySQL Connector:</b> The <b>'mysql-connector-python'</b> module enables Python programs to access MySQL databases. It provides an interface for connecting to MySQL servers, executing SQL queries, and managing transactions.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    import mysql.connector
+
+                                    conn = mysql.connector.connect(user='username', password='password', host='localhost', database='mydb')
+                                    cursor = conn.cursor()
+                                    cursor.execute('''SELECT * FROM customers''')
+                                    rows = cursor.fetchall()
+                                    for row in rows:
+                                        print(row)
+                                    conn.close()
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>PostgreSQL Connector:</b> The <b>'psycopg2'</b> module is a PostgreSQL adapter for Python. It allows you to connect to PostgreSQL databases, execute SQL statements, and retrieve results efficiently.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    import psycopg2
+
+                                    conn = psycopg2.connect(database="mydb", user="myuser", password="mypassword", host="localhost", port="5432")
+                                    cursor = conn.cursor()
+                                    cursor.execute('''SELECT * FROM employees''')
+                                    rows = cursor.fetchall()
+                                    for row in rows:
+                                        print(row)
+                                    conn.close()
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </article>
             </section>
             <section>
                 <header id="Exception_Handling">Exception Handling</header>

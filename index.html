@@ -278,6 +278,65 @@
             </section>
             <section>
                 <header id="Exception_Handling">Exception Handling</header>
+                <article>
+                    <p>Exception handling allows you to catch and handle errors or exceptions that may occur during the execution of your code. It helps in maintaining the flow of the program and providing appropriate error messages. Here are a few important concepts related to exception handling:</p>
+                    <ul>
+                        <li>
+                            <b>Try-Except:</b> The <b>'try-except'</b> block is used to handle exceptions. The code insde the <b>'try'</b> block is executed, and if any exception occurs, it is caught and handled by the corresponding <b>'except'</b> block
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    try:
+                                        result = 10 / 0
+                                        print(result)
+                                    except ZeroDivisionError:
+                                        print("Cannot divide by zero.")
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>Raise:</b> The <b>'raise'</b> statement is used to explicitly raise an exception. It allows you to create custom exceptions or propagate existing exceptions to higher levels of the program.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    def validate_age(age):
+                                        if age &lt; 0:
+                                            raise ValueError("Age cannot be negative.")
+                                        elif age &lt; 18:
+                                            raise ValueError("Must be at least 18 years old.")
+                                        else:
+                                            print("Age is valid.")
+
+                                    try:
+                                        validate_age(15)
+                                    except ValueError as e:
+                                        print(str(e))
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>Finally:</b> The <b>'finally'</b> block is used to specify code that should be executed regardless of whether an exception occurred or not. It is typically used to perform cleanup operations, such as closing files or releasing resources.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    file = None
+                                    try:
+                                        file = open("data.txt", "r")
+                                        content = file.read()
+                                        print(content)
+                                    except FileNotFoundError:
+                                        print("File not found.")
+                                    finally:
+                                        if file:
+                                            file.close()
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </article>
             </section>
             <section>
                 <header id="Object_Oriented_Programming">Object-Oriented Programming (OOP)</header>

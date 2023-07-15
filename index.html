@@ -340,6 +340,69 @@
             </section>
             <section>
                 <header id="Object_Oriented_Programming">Object-Oriented Programming (OOP)</header>
+                <article>
+                    <p>Object-Oriented Programming (OOP) is a programming paradigm that emphasizes the concept of objects and classes. It provides a way to structure code by grouping related data and functions together. Here are a few important concepts related to OOP in Python:</p>
+                    <ul>
+                        <li>
+                            <b>Class:</b> A class is a blueprint or template for creating objects. It defines the properties (attributes) and behaviors (methods) that objects of that class will have.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    class Car:
+                                        def __init__(self, brand, color):
+                                            self.brand = brand
+                                            self.color = color
+
+                                        def start_engine(self):
+                                            print("Engine started.")
+
+                                    my_car = Car("Toyota", "Red")
+                                    print(my_car.brand)  # Output: Toyota
+                                    my_car.start_engine()  # Output: Engine started.
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>Inheritance:</b> Inheritance is a mechanism that allows you to define a new class based on an existing class. The new class inherits the attributes and methods of the existing class, allowing code reuse and creating a hierarchy of classes.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    class ElectricCar(Car):
+                                        def __init__(self, brand, color, battery_capacity):
+                                            super().__init__(brand, color)
+                                            self.battery_capacity = battery_capacity
+
+                                        def charge_battery(self):
+                                            print("Battery charged.")
+
+                                    my_electric_car = ElectricCar("Tesla", "Blue", 75)
+                                    print(my_electric_car.color)  # Output: Blue
+                                    my_electric_car.start_engine()  # Output: Engine started.
+                                    my_electric_car.charge_battery()  # Output: Battery charged.
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <b>Polymorphism:</b> Polymorphism allows objects of different classes to be used interchangeably based on their common interface. It provides flexibility and allows the same code to work with different objects.
+                            <br>
+                            <b>Example:</b>
+                            <pre>
+                                <code>
+                                    def describe_vehicle(vehicle):
+                                        print(f"Brand: {vehicle.brand}, Color: {vehicle.color}")
+
+                                    my_car = Car("Toyota", "Red")
+                                    my_electric_car = ElectricCar("Tesla", "Blue", 75)
+
+                                    describe_vehicle(my_car)  # Output: Brand: Toyota, Color: Red
+                                    describe_vehicle(my_electric_car)  # Output: Brand: Tesla, Color: Blue
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </article>
             </section>
             <section>
                 <header id="Web_Scraping">Web Scraping</header>

@@ -38,10 +38,10 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    x = 5
-                                    y = 3
-                                    z = x + y
-                                    print(z) # Output: 8
+x = 5
+y = 3
+z = x + y
+print(z) # Output: 8
                                 </code>
                             </pre>
                         </li>
@@ -50,8 +50,8 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    message = "Hello, world!"
-                                    print(message) # Output: Hello, world!
+message = "Hello, world!"
+print(message) # Output: Hello, world!
                                 </code>
                             </pre>
                         </li>
@@ -60,9 +60,9 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    fruit = ['apple', 'banana', 'orange']
-                                    fruit.append('grape')
-                                    print(fruits) # Output: ['apple', 'banana', 'orange', 'grape']
+fruit = ['apple', 'banana', 'orange']
+fruit.append('grape')
+print(fruits) # Output: ['apple', 'banana', 'orange', 'grape']
                                 </code>
                             </pre>
                         </li>
@@ -79,11 +79,11 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    age = 18
-                                    if age >= 18:
-                                        print("You are an adult.")
-                                    else:
-                                        print("You are a minor.")
+age = 18
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
                                 </code>
                             </pre>
                         </li>
@@ -92,9 +92,9 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    fruits = ['apple', 'banana', 'orange']
-                                    for fruit in fruits:
-                                        print(fruit)
+fruits = ['apple', 'banana', 'orange']
+for fruit in fruits:
+    print(fruit)
                                 </code>
                             </pre>
                         </li>
@@ -103,10 +103,10 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    count = 0
-                                    while count &gt; 5:
-                                        print(count)
-                                        count += 1
+count = 0
+while count &gt; 5:
+    print(count)
+    count += 1
                                 </code>
                             </pre>
                         </li>
@@ -123,7 +123,7 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    file = open('data.txt', 'r')
+file = open('data.txt', 'r')
                                 </code>
                             </pre>
                         </li>
@@ -132,9 +132,9 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    file = open('data.txt', 'r')
-                                    content = file.read()
-                                    print(content)
+file = open('data.txt', 'r')
+content = file.read()
+print(content)
                                 </code>
                             </pre>
                         </li>
@@ -144,9 +144,9 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    file = open('data.txt', 'w')
-                                    file.write('Hello, world!')
-                                    file.close()
+file = open('data.txt', 'w')
+file.write('Hello, world!')
+file.close()
                                 </code>
                             </pre>
                         </li>
@@ -163,13 +163,13 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    import re
+import re
 
-                                    text = "Hello, world!"
-                                    pattern = r"Hello"
-                                    match = re.search(pattern, text)
-                                    if match:
-                                        print("Pattern found.")
+text = "Hello, world!"
+pattern = r"Hello"
+match = re.search(pattern, text)
+if match:
+    print("Pattern found.")
                                 </code>
                             </pre>
                         </li>
@@ -178,12 +178,12 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    import re
+import re
 
-                                    text = "The quick brown fox jumps over the lazy dog."
-                                    pattern = r".o."
-                                    matches = re.findall(pattern, text)
-                                    print(matches) # Output: ['fox', 'dog']
+text = "The quick brown fox jumps over the lazy dog."
+pattern = r".o."
+matches = re.findall(pattern, text)
+print(matches) # Output: ['fox', 'dog']
                                 </code>
                             </pre>
                         </li>
@@ -192,13 +192,13 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    import re
+import re
 
-                                    text = "The password must contain at least one uppercase letter."
-                                    pattern = r"[A-Z]"
-                                    match = re.search(pattern, text)
-                                    if match:
-                                        print("Uppercase letter found.")
+text = "The password must contain at least one uppercase letter."
+pattern = r"[A-Z]"
+match = re.search(pattern, text)
+if match:
+    print("Uppercase letter found.")
                                 </code>
                             </pre>
                         </li>
@@ -215,13 +215,13 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    import sqlite3
+import sqlite3
 
-                                    conn = sqlite3.connect('example.db')
-                                    cursor = conn.cursor()
-                                    cursor.execute('''CREATE TABLE users (id INT PRIMARY KEY, name TEXT)''')
-                                    conn.commit()
-                                    conn.close()
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+cursor.execute('''CREATE TABLE users (id INT PRIMARY KEY, name TEXT)''')
+conn.commit()
+conn.close()
                                 </code>
                             </pre>
                         </li>
@@ -230,15 +230,15 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    import mysql.connector
+import mysql.connector
 
-                                    conn = mysql.connector.connect(user='username', password='password', host='localhost', database='mydb')
-                                    cursor = conn.cursor()
-                                    cursor.execute('''SELECT * FROM customers''')
-                                    rows = cursor.fetchall()
-                                    for row in rows:
-                                        print(row)
-                                    conn.close()
+conn = mysql.connector.connect(user='username', password='password', host='localhost', database='mydb')
+cursor = conn.cursor()
+cursor.execute('''SELECT * FROM customers''')
+rows = cursor.fetchall()
+for row in rows:
+    print(row)
+conn.close()
                                 </code>
                             </pre>
                         </li>
@@ -247,15 +247,15 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    import psycopg2
+import psycopg2
 
-                                    conn = psycopg2.connect(database="mydb", user="myuser", password="mypassword", host="localhost", port="5432")
-                                    cursor = conn.cursor()
-                                    cursor.execute('''SELECT * FROM employees''')
-                                    rows = cursor.fetchall()
-                                    for row in rows:
-                                        print(row)
-                                    conn.close()
+conn = psycopg2.connect(database="mydb", user="myuser", password="mypassword", host="localhost", port="5432")
+cursor = conn.cursor()
+cursor.execute('''SELECT * FROM employees''')
+rows = cursor.fetchall()
+for row in rows:
+    print(row)
+conn.close()
                                 </code>
                             </pre>
                         </li>
@@ -272,11 +272,11 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    try:
-                                        result = 10 / 0
-                                        print(result)
-                                    except ZeroDivisionError:
-                                        print("Cannot divide by zero.")
+try:
+    result = 10 / 0
+    print(result)
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
                                 </code>
                             </pre>
                         </li>
@@ -285,18 +285,18 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    def validate_age(age):
-                                        if age &lt; 0:
-                                            raise ValueError("Age cannot be negative.")
-                                        elif age &lt; 18:
-                                            raise ValueError("Must be at least 18 years old.")
-                                        else:
-                                            print("Age is valid.")
+def validate_age(age):
+    if age &lt; 0:
+        raise ValueError("Age cannot be negative.")
+    elif age &lt; 18:
+        raise ValueError("Must be at least 18 years old.")
+    else:
+        print("Age is valid.")
 
-                                    try:
-                                        validate_age(15)
-                                    except ValueError as e:
-                                        print(str(e))
+    try:
+        validate_age(15)
+    except ValueError as e:
+        print(str(e))
                                 </code>
                             </pre>
                         </li>
@@ -305,16 +305,16 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    file = None
-                                    try:
-                                        file = open("data.txt", "r")
-                                        content = file.read()
-                                        print(content)
-                                    except FileNotFoundError:
-                                        print("File not found.")
-                                    finally:
-                                        if file:
-                                            file.close()
+file = None
+try:
+    file = open("data.txt", "r")
+    content = file.read()
+    print(content)
+except FileNotFoundError:
+    print("File not found.")
+finally:
+    if file:
+        file.close()
                                 </code>
                             </pre>
                         </li>
@@ -331,17 +331,17 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    class Car:
-                                        def __init__(self, brand, color):
-                                            self.brand = brand
-                                            self.color = color
+class Car:
+    def __init__(self, brand, color):
+        self.brand = brand
+        self.color = color
 
-                                        def start_engine(self):
-                                            print("Engine started.")
+    def start_engine(self):
+        print("Engine started.")
 
-                                    my_car = Car("Toyota", "Red")
-                                    print(my_car.brand)  # Output: Toyota
-                                    my_car.start_engine()  # Output: Engine started.
+    my_car = Car("Toyota", "Red")
+    print(my_car.brand)  # Output: Toyota
+    my_car.start_engine()  # Output: Engine started.
                                 </code>
                             </pre>
                         </li>
@@ -350,18 +350,18 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    class ElectricCar(Car):
-                                        def __init__(self, brand, color, battery_capacity):
-                                            super().__init__(brand, color)
-                                            self.battery_capacity = battery_capacity
+class ElectricCar(Car):
+    def __init__(self, brand, color, battery_capacity):
+        super().__init__(brand, color)
+        self.battery_capacity = battery_capacity
 
-                                        def charge_battery(self):
-                                            print("Battery charged.")
+    def charge_battery(self):
+        print("Battery charged.")
 
-                                    my_electric_car = ElectricCar("Tesla", "Blue", 75)
-                                    print(my_electric_car.color)  # Output: Blue
-                                    my_electric_car.start_engine()  # Output: Engine started.
-                                    my_electric_car.charge_battery()  # Output: Battery charged.
+my_electric_car = ElectricCar("Tesla", "Blue", 75)
+print(my_electric_car.color)  # Output: Blue
+my_electric_car.start_engine()  # Output: Engine started.
+my_electric_car.charge_battery()  # Output: Battery charged.
                                 </code>
                             </pre>
                         </li>
@@ -370,14 +370,14 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    def describe_vehicle(vehicle):
-                                        print(f"Brand: {vehicle.brand}, Color: {vehicle.color}")
+def describe_vehicle(vehicle):
+    print(f"Brand: {vehicle.brand}, Color: {vehicle.color}")
 
-                                    my_car = Car("Toyota", "Red")
-                                    my_electric_car = ElectricCar("Tesla", "Blue", 75)
+my_car = Car("Toyota", "Red")
+my_electric_car = ElectricCar("Tesla", "Blue", 75)
 
-                                    describe_vehicle(my_car)  # Output: Brand: Toyota, Color: Red
-                                    describe_vehicle(my_electric_car)  # Output: Brand: Tesla, Color: Blue
+describe_vehicle(my_car)  # Output: Brand: Toyota, Color: Red
+describe_vehicle(my_electric_car)  # Output: Brand: Tesla, Color: Blue
                                 </code>
                             </pre>
                         </li>
@@ -394,11 +394,11 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    import requests
+import requests
 
-                                    response = requests.get("https://www.example.com")
-                                    print(response.status_code)  # Output: 200
-                                    print(response.text)  # Output: HTML content of the page
+response = requests.get("https://www.example.com")
+print(response.status_code)  # Output: 200
+print(response.text)  # Output: HTML content of the page
                                 </code>
                             </pre>
                         </li>
@@ -407,12 +407,12 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup
 
-                                    html = "&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello, world!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;"
-                                    soup = BeautifulSoup(html, "html.parser")
-                                    heading = soup.find("h1")
-                                    print(heading.text)  # Output: Hello, world!
+html = "&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello, world!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;"
+soup = BeautifulSoup(html, "html.parser")
+heading = soup.find("h1")
+print(heading.text)  # Output: Hello, world!
                                 </code>
                             </pre>
                         </li>
@@ -421,15 +421,15 @@
                             <div class="example">Example:</div>
                             <pre>
                                 <code>
-                                    from lxml import etree
-                                    from cssselect import CSSSelector
+from lxml import etree
+from cssselect import CSSSelector
 
-                                    html = "&lt;html&gt;&lt;body&gt;&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html>"
-                                    tree = etree.fromstring(html)
-                                    selector = CSSSelector("li")
-                                    items = selector(tree)
-                                    for item in items:
-                                        print(item.text)  # Output: Item 1, Item 2
+html = "&lt;html&gt;&lt;body&gt;&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html>"
+tree = etree.fromstring(html)
+selector = CSSSelector("li")
+items = selector(tree)
+for item in items:
+    print(item.text)  # Output: Item 1, Item 2
                                 </code>
                             </pre>
                         </li>

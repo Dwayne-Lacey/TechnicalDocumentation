@@ -43,6 +43,10 @@ a:visited {
     color: rgb(219, 217, 217);
 }
 
+p > a {
+    color: rgb(255, 175, 1);
+}
+
 html {
     background-color: rgb(24, 20, 29);
     font-family: 'Open Sans', Arial, sans-serif;
@@ -75,7 +79,7 @@ article {
 .example {
     display: block;
     font-weight: bold;
-    margin: 1em 0 0 1em;
+    margin: 3em 0 1em 1em;
 }
 
 code {
@@ -97,5 +101,9 @@ pre {
     border-radius: 5px;
     border: 1px white solid;
     width: 90%;
-    margin: 1.5em auto;
+    margin: 0 auto 6em auto;
+}
+
+.reference {
+    padding-left: 2.5%;
 }

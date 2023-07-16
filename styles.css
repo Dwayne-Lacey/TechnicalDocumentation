@@ -107,3 +107,43 @@ pre {
 .reference {
     padding-left: 2.5%;
 }
+
+@media only screen and (max-width: 815px) {
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        font-size: 25px;
+        border-bottom: 2px rgb(150, 150, 150) solid;
+        z-index: 1;
+        background-color: rgb(24, 20, 29);
+    }
+    #main-doc {
+        position: absolute;
+        top: 290px;
+        margin-left: 0;
+        padding-left: 0;
+        z-index: 0;
+        width: 100%;
+    }
+    #navbar > ul {
+        list-style-type: none;
+        padding: 0 0 0 0;
+        font-size: .65em;
+        margin: 0;
+        max-height: 216px;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    pre {
+        background-color: rgb(20, 20, 20);
+        border-radius: 5px;
+        border: 1px white solid;
+        width: 100%;
+        margin: 0 auto 6em auto;
+    }
+}

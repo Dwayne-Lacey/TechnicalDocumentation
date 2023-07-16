@@ -6,18 +6,24 @@
     height: 100%;
     font-size: 25px;
     border-right: 2px rgb(150, 150, 150) solid;
+    z-index: 1;
+    background-color: rgb(24, 20, 29);
 }
 
 #main-doc {
     position: absolute;
     margin-left: 310px;
     padding-left: 15px;
+    z-index: 0;
 }
 
 #navbar > header {
-    color: rgb(255, 175, 1);
     text-align: center;
     padding: .5em 0 .7em 0;
+}
+
+header {
+    color: rgb(255, 175, 1);
 }
 
 #navbar > ul {
@@ -50,5 +56,46 @@ html {
 
 section > header {
     font-size: 25px;
-    color: rgb(255, 175, 1);
+    margin-bottom: 2.5%;
+}
+
+section {
+    margin-bottom: 30px;
+    width: 85%
+}
+
+article {
+    padding-left: 2.5%;
+}
+
+.head, .example {
+    color:rgb(255, 175, 1)
+}
+
+.example {
+    display: block;
+    font-weight: bold;
+    margin: 1em 0 0 1em;
+}
+
+code {
+    font-size: 1.2em;
+    text-align: left;
+    width: 90%;
+    height: 95%;
+    margin: 0 5%;
+    align-self: center;
+    display: block;
+    overflow-x: scroll;
+}
+code::-webkit-scrollbar {
+    display: none;
+}
+
+pre {
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px;
+    border: 1px white solid;
+    width: 90%;
+    margin: 1.5em auto;
 }

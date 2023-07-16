@@ -4,9 +4,44 @@
     left: 0px;
     width: 300px;
     height: 100%;
+    font-size: 25px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    border-right: 2px rgb(150, 150, 150) solid;
 }
 
 #main-doc {
     position: absolute;
     margin-left: 310px;
+}
+
+#navbar > header {
+    color: rgb(224, 224, 224);
+    text-align: center;
+    padding: .5em 0 .7em 0;
+}
+
+#navbar > ul {
+    list-style-type: none;
+    padding: 0 0 0 0;
+    font-size: .65em;
+    margin: 0;
+}
+
+li > a {
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+}
+
+li > a:visited {
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+}
+
+html {
+    background-color: rgb(24, 20, 29);
+}
+
+#navbar > ul > li {
+    border-top: 1px rgb(150, 150, 150) solid;
+    padding: .8em 0 .8em .7em;
 }

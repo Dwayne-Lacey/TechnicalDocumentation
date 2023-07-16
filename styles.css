@@ -5,17 +5,17 @@
     width: 300px;
     height: 100%;
     font-size: 25px;
-    font-family: 'Open Sans', Arial, sans-serif;
     border-right: 2px rgb(150, 150, 150) solid;
 }
 
 #main-doc {
     position: absolute;
     margin-left: 310px;
+    padding-left: 15px;
 }
 
 #navbar > header {
-    color: rgb(224, 224, 224);
+    color: rgb(255, 175, 1);
     text-align: center;
     padding: .5em 0 .7em 0;
 }
@@ -27,21 +27,28 @@
     margin: 0;
 }
 
-li > a {
+a {
     text-decoration: none;
-    color: rgb(224, 224, 224);
+    color: rgb(219, 217, 217);
 }
 
-li > a:visited {
+a:visited {
     text-decoration: none;
-    color: rgb(224, 224, 224);
+    color: rgb(219, 217, 217);
 }
 
 html {
     background-color: rgb(24, 20, 29);
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: rgb(219, 217, 217);
 }
 
 #navbar > ul > li {
     border-top: 1px rgb(150, 150, 150) solid;
     padding: .8em 0 .8em .7em;
+}
+
+section > header {
+    font-size: 25px;
+    color: rgb(255, 175, 1);
 }
